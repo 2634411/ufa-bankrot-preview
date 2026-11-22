@@ -31,3 +31,7 @@ body{background:#faf9f6}.hero{background:#f3f0eb}.reviews-section{background:#ee
 .visual-caption p{font-size:12px}
 .visual-caption strong{color:rgba(23,44,57,.85)}
 @media(max-width:600px){.hero-visual{padding-bottom:90px}.hero-visual img{height:calc(100% - 90px)}.visual-caption{padding:12px 0 0}.visual-caption span{font-size:11px}.visual-caption p{font-size:11px}}
+
+/* Keep the transparent caption clear of the portrait's rounded corners. */
+.hero-visual .visual-caption{background:transparent;backdrop-filter:none;border-radius:0;padding:18px 12px 8px}
+@media(max-width:600px){.hero-visual .visual-caption{padding:12px 10px 8px}}
